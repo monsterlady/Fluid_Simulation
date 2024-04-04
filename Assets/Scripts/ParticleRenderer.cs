@@ -1,4 +1,3 @@
-using System.Data;
 using UnityEngine;
 
 public class ParticleRenderer : MonoBehaviour
@@ -26,6 +25,7 @@ public class ParticleRenderer : MonoBehaviour
 
 		argsBuffer = ComputeHelper.CreateArgsBuffer(mesh, sim.particlePositionsBuffer.count);
 		bounds = new Bounds(Vector3.zero, Vector3.one * 10000);
+		Debug.Log(bounds);
 	}
 
 	void LateUpdate()

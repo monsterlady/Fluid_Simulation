@@ -33,6 +33,13 @@ This project has been developed and tested on the Unity Editor. Compatibility wi
 
 This project is based on the tutorial by [Sebastian Lague](https://youtu.be/rSKMYc1CQHE). The framework and shaders used in this project were provided as part of the tutorial. Special thanks to the creator for the detailed instructions and resources.
 
+## References
+
+- Müller, M., Charypar, D., & Gross, M. (2003). Particle-Based Fluid Simulation for Interactive Applications. Retrieved from [https://matthias-research.github.io/pages/publications/sca03.pdf](https://matthias-research.github.io/pages/publications/sca03.pdf)
+- Clavet, S., Beaudoin, P., & Poulin, P. (2005). Particle-based Viscoelastic Fluid Simulation. Retrieved from [http://www.ligum.umontreal.ca/Clavet-2005-PVFS/pvfs.pdf](http://www.ligum.umontreal.ca/Clavet-2005-PVFS/pvfs.pdf)
+- Kelager, M. (2006). Smoothed Particle Hydrodynamics Techniques for the Physics Based Simulation of Fluids and Solids. Retrieved from [https://sph-tutorial.physics-simulation.org/pdf/SPH_Tutorial.pdf](https://sph-tutorial.physics-simulation.org/pdf/SPH_Tutorial.pdf)
+- Harada, T., Koshizuka, S., & Kawaguchi, Y. (2007). Particle Simulation using CUDA. Retrieved from [https://web.archive.org/web/20140725014123/https://docs.nvidia.com/cuda/samples/5_Simulations/particles/doc/particles.pdf](https://web.archive.org/web/20140725014123/https://docs.nvidia.com/cuda/samples/5_Simulations/particles/doc/particles.pdf)
+
 ## License
 
 This project is open-source and available under the MIT License. See the LICENSE file for more details.

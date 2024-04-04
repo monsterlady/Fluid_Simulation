@@ -10,7 +10,19 @@ public class ParticleSpawner : MonoBehaviour
     public Vector2 size; // 生成区域大小
     public float jitterIntensity; // 抖动强度
     public bool displaySpawnArea; // 是否显示生成区域的Gizmo
+    
+ // 粒子生成数据结构
+    public struct ParticleSpawnData
+    {
+        public float2[] positions; // 位置数组
+        public float2[] velocities; // 速度数组
 
+        public ParticleSpawnData(int num)
+        {
+            positions = new float2[num];
+            velocities = new float2[num];
+        }
+    }
     // 获取生成数据
     public ParticleSpawnData GetSpawnData()
     {
@@ -36,28 +48,5 @@ public class ParticleSpawner : MonoBehaviour
         }
 
         return data;
-    }
-
-    // 粒子生成数据结构
-    public struct ParticleSpawnData
-    {
-        public float2[] positions; // 位置数组
-        public float2[] velocities; // 速度数组
-
-        public ParticleSpawnData(int num)
-        {
-            positions = new float2[num];
-            velocities = new float2[num];
-        }
-    }
-
-    // 在编辑器中绘制生成区域
-    void OnDrawGizmos()
-    {
-        if (displaySpawnArea && !Application.isPlaying)
-        {
-            Gizmos.color = new Color(1, 1, 0, 0.5f);
-            Gizmos.DrawWireCube(center, size);
-        }
     }
 }
